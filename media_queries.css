@@ -657,11 +657,22 @@
     font-size: revert;
     font-weight: 900;
   }
+  .sponsorTitle p {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .themeheading h1 {
     font-size: x-large;
     font-weight: 900;
+  }
+  .sponsorTitle p {
+    font-size: 3.6rem;
+  }
+}
+@media screen and (max-width: 370px) {
+  .sponsorTitle p {
+    font-size: 3rem;
   }
 }

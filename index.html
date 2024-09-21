@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -47,7 +47,7 @@
               <div class="faq1 navlink"><a href="index.html#faq">FAQ</a></div>
             </div>
             <div class="navbar-link4">
-              <div class="sponsor1 navlink"><a href="index.html#sponsor">Sponsors</a></div>
+              <div class="sponsor navlink"><a href="index.html#sponsorid">Sponsors</a></div>
             </div>
           </nav>
           <button class="primary-button">
@@ -113,8 +113,20 @@
 
        <!--sponser section-->
 
-       <section class="sponsorSection">
-
+       <section class="sponsorSection" id="sponsorid">
+        <div class="sponsors">
+        <div class="sponsorTitleSection">
+          <div class="sponsorTitle"><p>Sponsors</p></div>
+        </div>
+        <div class="spontorlistContainer">
+          <div class="sponsorlist">
+            <div class="sponsor1"></div>
+            <div class="sponsor2"></div>
+            <div class="sponsor3"></div>
+            <div class="sponsor4"></div>
+          </div>
+        </div>
+      </div>
        </section>
 
        <!--sponser section End-->
@@ -189,7 +201,7 @@
       <div class="container4">
         <div class="card7">
           <div class="blog-image">
-            <img src="./assets/robotics.jpg" alt="">
+            <img src="./assets/robotics.png" alt="">
             <div class="blog-image-child"></div>
           </div>
           <h3 class="h63">Robotics</h3>
@@ -219,7 +231,7 @@
 
         <div class="card7">
           <div class="blog-image">
-            <img src="./assets/vehicle.jpg" alt="">
+            <img src="./assets/vehicle.png" alt="">
             <div class="blog-image-child"></div>
           </div>
           <h3 class="h63">Smart Vehicle</h3>
@@ -234,7 +246,7 @@
 
         <div class="card7">
           <div class="blog-image">
-            <img src="./assets/greentech.jpg" alt="">
+            <img src="./assets/greentech.png" alt="">
             <div class="blog-image-child"></div>
           </div>
           <h3 class="h63">Energy and Environment</h3>
@@ -383,6 +395,9 @@
              
               <div class="card7">
                 <div class="blog-image">
+                  <img class="mySlideslegacy" src="assets/legacy1.jpg" height="215rem">
+                  <img class="mySlideslegacy" src="assets/legacy2.jpg" height="215rem">
+                  <img class="mySlideslegacy" src="assets/legacy3.jpg" height="215rem">
                   <div class="blog-image-child"></div>
                 </div>
                 <h3 class="h63">Legacy of IEDC</h3>
@@ -404,12 +419,12 @@
                   <img class="mySlides1" src="assets/previmg4.jpg" height="215rem">
                   <img class="mySlides1" src="assets/previmg5.jpg" height="215rem">
                   <img class="mySlides1" src="assets/previmg6.jpg" height="215rem">
-                  <img class="mySlides1" src="assets/WhatsApp Image 2024-07-14 at 18.06.43_c54a2669.jpg" height="215rem">
+                 
                   <div class="blog-image-child"></div>
                 </div>
                 <h3 class="h63">Our History</h3>
                 <div class="paragraphsm">
-                  Since 2022, IEDC Thalassery has successfully hosted annual hackathons, establishing a strong legacy of innovation and collaboration. Each year, the event has grown in scale, attracting more participants and industry support. Now, as they launch Hackatly 24 in 2024, the tradition continues with even greater ambition, promising to push the boundaries of creativity and technology further than ever before.
+                  <p>Since 2022, IEDC Thalassery has successfully hosted annual hackathons, establishing a strong legacy of innovation and collaboration. Each year, the event has grown in scale, attracting more participants and industry support. Now, as they launch Hackatly 24 in 2024, the tradition continues with even greater ambition, promising to push the boundaries of creativity and technology further than ever before.</p>
                 </div>
               </div>
               <div class="card7">
@@ -671,20 +686,31 @@
         </div>
       </section>
       <script>var myIndex = 0;
-        carousel();
         carousel2();
+        let slideIndex = 1;
+showSlides(slideIndex);
 
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2900); // Change image every 2 seconds
-        }
+// Automatic slideshow
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Automatic slideshow
+setInterval(function() {
+  slideIndex++;
+  if (slideIndex > document.getElementsByClassName("mySlides").length) {
+    slideIndex = 1;
+  }
+  showSlides(slideIndex);
+}, 3000); // Change the interval time in milliseconds (5000 = 5 seconds)
+
         function carousel2() {
           var i;
           var x = document.getElementsByClassName("mySlides1");
@@ -696,6 +722,30 @@
           x[myIndex-1].style.display = "block";  
           setTimeout(carousel2, 2500); // Change image every 2 seconds
         }
-       
+       // Get the images
+var slides = document.getElementsByClassName("mySlideslegacy");
+
+// Set the current slide index
+var currentSlide = 0;
+
+// Function to show the next slide
+function nextSlide() {
+  // Hide the current slide
+  slides[currentSlide].style.display = "none";
+  
+  // Increment the current slide index
+  currentSlide++;
+  
+  // If we've reached the end of the slides, go back to the first one
+  if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+  
+  // Show the next slide
+  slides[currentSlide].style.display = "block";
+}
+
+// Set the interval to change the slide every 3 seconds
+setInterval(nextSlide, 3000);
         
         </script>

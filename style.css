@@ -2796,3 +2796,48 @@ i {
   display: flex;
   align-items: flex-start;
 }
+.sponsorTitleSection {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.sponsorTitle p {
+  margin: 0;
+  position: relative;
+  font-size: 4.7rem;
+  letter-spacing: -0.03em;
+  line-height: 4.5rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #f6f6f7, #7e808f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.spontorlistContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 5rem;
+}
+.sponsorlist {
+  width: 85vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.sponsorSection,
+.sponsors {
+  width: 100vw;
+  height: auto;
+}
+.sponsor1,
+.sponsor2,
+.sponsor3,
+.sponsor4 {
+  width: 12rem;
+  height: 9rem;
+  background-color: #7e808f;
+}
