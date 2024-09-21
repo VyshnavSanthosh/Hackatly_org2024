@@ -2344,7 +2344,9 @@
   display: flex;
   flex-direction: row;
   gap: 4vmin;
-  margin-top: 10vmin;
+  margin-top: 5vmin;
+  align-items: center;
+  justify-content: center;
 }
 .inner-container3 {
   width: 24.563rem;
@@ -2795,4 +2797,64 @@ i {
 .icon-div {
   display: flex;
   align-items: flex-start;
+}
+.section4-1{
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.hackreg h2{
+  font-size: 2rem;
+  margin : 0;
+  padding: 0;
+}
+.logo_iedc p{
+  text-align: left;
+  margin: 0.625rem 0.625rem 0.625rem 0;
+  font-size: 1rem;
+}
+.logo_iedc{
+  display: flex;
+  flex-flow: column;
+}
+.hackreg{
+  display:flex;
+  flex-flow: column;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 0.98rem;
+
+
+}
+.divide{
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+/* .logo_iedc .logo{
+  height: fit-content;
+  width: fit-content;
+} */
+.opacity{
+  opacity: 0.4;
+}
+.maps{
+  width: 100vw;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.623rem;
+}
+.maps p{
+  font-size: 1rem;
+  width: fit-content;
+  color: #556098;
+}
+.foot{
+  padding: 25px 0 25px 0;
+  align-items: center;
+  justify-content: center;
 }
