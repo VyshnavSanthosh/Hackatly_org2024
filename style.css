@@ -8,6 +8,7 @@
   overflow: hidden;
   height: 3.225rem;
 }
+
 .logo-child {
   position: absolute;
   top: calc(50% - 24.45px);
@@ -2725,20 +2726,6 @@
   z-index: 2;
 }
 
-.ellipse {
-  position: absolute;
-  height: 55vh;
-  width: 85vh;
-  border-radius: 50%;
-  filter: blur(40rem);
-  backdrop-filter: blur(100%);
-  z-index: 1;
-}
-
-.purple {
-  background-color: #7214ff20;
-}
-
 .green {
   background-color: #32cafd20;
 }
@@ -2798,7 +2785,6 @@ i {
   display: flex;
   align-items: flex-start;
 }
-<<<<<<< HEAD
 .sponsorTitleSection {
   display: flex;
   width: 100vw;
@@ -2844,38 +2830,36 @@ i {
   height: 9rem;
   background-color: #7e808f;
 }
-=======
-.section4-1{
+
+.section4-1 {
   width: 100vw;
   display: flex;
   flex-flow: row;
   justify-content: space-around;
   align-items: flex-start;
 }
-.hackreg h2{
+.hackreg h2 {
   font-size: 2rem;
-  margin : 0;
+  margin: 0;
   padding: 0;
 }
-.logo_iedc p{
+.logo_iedc p {
   text-align: left;
   margin: 0.625rem 0.625rem 0.625rem 0;
   font-size: 1rem;
 }
-.logo_iedc{
+.logo_iedc {
   display: flex;
   flex-flow: column;
 }
-.hackreg{
-  display:flex;
+.hackreg {
+  display: flex;
   flex-flow: column;
   justify-content: end;
   align-items: flex-end;
   gap: 0.98rem;
-
-
 }
-.divide{
+.divide {
   width: 100vw;
   display: flex;
   flex-flow: column;
@@ -2884,10 +2868,10 @@ i {
   height: fit-content;
   width: fit-content;
 } */
-.opacity{
+.opacity {
   opacity: 0.4;
 }
-.maps{
+.maps {
   width: 100vw;
   display: flex;
   flex-flow: row;
@@ -2895,14 +2879,12 @@ i {
   justify-content: center;
   gap: 0.623rem;
 }
-.maps p{
+.maps p {
   font-size: 1rem;
   width: fit-content;
   color: #556098;
 }
-.foot{
-  padding: 25px 0 25px 0;
+.foot {
   align-items: center;
   justify-content: center;
 }
->>>>>>> f88b0407416319ee4842fa0d883eada0ff84de0f
